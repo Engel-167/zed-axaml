@@ -1,0 +1,9 @@
+[
+  { "token_type": "selectorType", "style": ["type", "tag"] },
+  { "token_type": "styleClass", "style": ["constant", "enum", "type"] },
+  { "token_type": "styleClassUnused", "style": ["comment"], "font_style": "italic" },
+  { "token_type": "pseudoClass", "style": ["keyword"] },
+  { "token_type": "templateSelector", "style": ["keyword"], "font_style": "italic" },
+  { "token_type": "selectorName", "style": ["variable.special", "label", "variable"] },
+  { "token_type": "nestingSelector", "style": ["operator"] }
+]

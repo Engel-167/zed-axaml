@@ -1,0 +1,13 @@
+name = "AXAML"
+grammar = "xml"
+path_suffixes = ["axaml", "paml"]
+block_comment = ["<!-- ", " -->"]
+tab_size = 4
+autoclose_before = ">]})\"'"
+brackets = [
+    { start = "<", end = ">", close = false, newline = true },
+    { start = "{", end = "}", close = true, newline = false },
+    { start = "[", end = "]", close = true, newline = false },
+    { start = "(", end = ")", close = true, newline = false },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = ["comment"] },
+]

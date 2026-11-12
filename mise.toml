@@ -1,0 +1,8 @@
+# Dev environment for the AXAML Zed extension.
+#   mise install          -> Rust (rustup) with the wasm32-wasip2 target Zed builds extensions for
+[tools]
+rust = { version = "stable", profile = "minimal", targets = "wasm32-wasip2" }
+
+[tasks.build]
+description = "Compile the extension to wasm (Zed rebuilds it itself on install; this is a quick type check)"
+run = "cargo build --release --target wasm32-wasip2"
